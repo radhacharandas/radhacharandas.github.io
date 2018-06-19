@@ -1,0 +1,27 @@
+h1,h2 { text-align:center;}
+
+img.banner {display: block;
+    	    margin-left: auto;
+    	    margin-right: auto;}
+
+img.pizza { display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	    
+	    }
+
+h2 { text-transform:uppercase;
+     color:#8a7993;}
+
+body { background-color:#eadef9;}
+
+#form1 {
+	position:absolute;
+	width: 600px; 
+	height: 300px; 
+	margin: 0 auto;
+	left:630px;
+	top:170px;
+	}
+
+#container {width:800px;}

@@ -1,0 +1,158 @@
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+ <html>
+
+<head>
+<title> Sri Radha's Organic Restaurant </title>
+
+	<link rel="stylesheet" type="text/css" href="finalproject.css">
+
+</head>
+
+
+
+
+
+
+
+
+<body>
+
+	<img class="banner" src="images/banner.jpg" alt="Radha's restaurant logo banner"> <!--designed own banner-->
+	<h2> Tell us about your experience! </h2>
+
+<div id = "container">
+	<img class="pizza" src="images/pizza1.jpg" alt="pizza image" width="400" height="230">
+
+<div>
+<form>
+	<div id="form1">
+<br>
+	<table>
+		<tr> 
+			<td> First Name: </td>
+				<td> 
+					<input type="text" name="First Name"/>
+				</td> 
+				<tr> 
+				  <td> Surname: </td>
+					<td> 
+						<input type="text" name="Surname"/>
+					</td> 
+				    </tr> 
+				      	<tr> 
+				    <td> Date of Birth: </td> 
+				    <td> 
+				    	<input type="Date" name="Date of Birth"/><!--date type works in Chrome-->
+				    </td>
+						</tr>
+						<tr>
+							<td> Contact tel no: </td>
+							<td>
+								<input type="text" name="Contact no">
+							</td>
+						</tr>
+						<tr>
+							<td> Email address: </td>
+							<td><input type="text" id="email" onblur="emailupper()"> </td>
+						</tr>
+						<tr>
+							<td> Your rating (10 being the best):</td>
+							<td> <input type="number" value="10" name="Rating" min="0" max="10" /> </td>
+						</tr>
+						<tr>
+							<td> How did you like the service of our staff? </td>
+							<td><select name="staff rating">
+									<option value="best friend"> Like a Best friend </option> 
+									<option value="pg"> Pretty good! </option>
+									<option value="satisfactory"> Satisfactory </option>
+									<option value="better luck next time"> Better luck next time! </option>
+								</select>
+							</td>
+						</tr>
+						<tr> 
+							<td> Your favourite meal of the day: </td>
+							<td><br>
+								<input type="radio" name="fave food"> Pizza
+								<input type="radio" name="fave food"> Burger 
+								<input type="radio" name="fave food"> Raw dessert<br>
+								<input type="radio" name= "fave food"> Other (please comment below)
+							</td>
+						</tr>
+						<tr>
+							<td> Comments and Suggestions: </td>
+							<td> 
+								<textarea>Enter your comments...</textarea>
+							</td>
+						</tr>
+						<tr>	
+							<td> <input type="button" value="Complete" onclick="complete()"> </td>
+						</tr>
+
+						<script>
+							function complete () { //Generates the thank you message
+								document.getElementById("thanks").innerHTML="Thanks for your feedback!";
+							}
+						
+					        function emailupper() { //changes email field to uppercase
+    							var x = document.getElementById("email");
+    							x.value = x.value.toUpperCase();
+    						}
+
+						</script>
+					</table>
+					
+<div>
+</form>
+					<p id="thanks">	</p>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </html>
